@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="400" prefWidth="600" spacing="10" style="-fx-background-color: #5198fc;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.activity10.TextEditorController">
+    <HBox alignment="CENTER_LEFT" spacing="10.0">
+        <Button onAction="#handleOpen" style="-fx-background-color: #043c8a;" text="Open" textFill="WHITE" />
+        <Button onAction="#handleSave" style="-fx-background-color: #043c8a;" text="Save" textFill="WHITE" />
+        <Button onAction="#handleUpdate" style="-fx-background-color: #043c8a;" text="Update" textFill="WHITE" />
+      <padding>
+         <Insets left="10.0" />
+      </padding>
+    </HBox>
+    <TextArea fx:id="textArea" prefHeight="350.0" prefWidth="600.0" />
+</VBox>
